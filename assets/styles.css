@@ -20,6 +20,10 @@ body {
     overflow-x: hidden;
 }
 
+.accent-text {
+    color: var(--color-accent)
+}
+
 
 /*** 2.  Header ***/
 header {
@@ -82,7 +86,22 @@ header {
 .btn-shadow {
 	filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 }
+    /** Profiles Section **/
 
+#profiles {
+    margin-top: 5rem;
+}
+
+.profile {
+    max-width: 9.375rem;
+    margin: 0 2rem;
+}
+.profile > img {
+    width: 9.375rem;
+}
+.profile > p {
+    font-style: italic;
+}
 /*============= MEDIA QUERIES =============*/
 
 /* Switch to Tablet view for <=768px */
