@@ -1,6 +1,7 @@
 /* SUMMARY
     1. GLOBAL
     2. Header
+    3. Main
     Media Queries
     Bootstrap Background Image Fix
 */
@@ -102,6 +103,37 @@ header {
 .profile > p {
     font-style: italic;
 }
+
+/*** 2.  Main ***/
+
+div.carousel {
+    background-color: var(--color-accent);
+    color: var(--color-light)!important;
+}
+
+.carousel-control-next-icon.light {
+	background-image: url(./images/arrow_white_right.png)!important;
+}
+.carousel-control-prev-icon.light {
+	background-image: url(./images/arrow_white_left.png)!important;
+}
+.carousel-control-next-icon.dark {
+	background-image: url(./images/arrow_black_right.png)!important;
+}
+.carousel-control-prev-icon.dark {
+	background-image: url(./images/arrow_black_left.png)!important;
+}
+.carousel-control-next, .carousel-control-prev {
+	opacity: 1 !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	height: 60px !important;
+	width: 30px !important;
+}
+
+
+
+
 /*============= MEDIA QUERIES =============*/
 
 /* Switch to Tablet view for <=768px */
