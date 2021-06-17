@@ -28,10 +28,10 @@ body {
 
 /*** 2.  Header ***/
 header {
-    background-image: url("./images/pic_1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-    min-height: 1000px;
+    background-image: url("images/pic_1.jpg"), linear-gradient(to top, #071629 50%, transparent);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
     color: white;
     margin-top: 0;
 }
@@ -138,6 +138,10 @@ div.carousel {
 
 /* Switch to Tablet view for <=768px */
 @media (max-width: 768px) {
+    header {
+        background-size: 1448.15px 1055px, cover;
+    }
+    
     .banner {
         font-size: 6rem;
     }
