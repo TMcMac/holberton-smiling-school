@@ -33,7 +33,9 @@ body {
 .accent-text {
     color: var(--color-accent);
 }
-
+.bg-dark {
+    background-color: var(--color-dark);
+}
 
 /*** 2.  Header ***/
 header {
@@ -177,7 +179,14 @@ header {
     background-image: url(images/thumbnail_1.jpg);
 }
 
+    /** Membership **/
 
+.membership-card {
+    color: var(--color-light);
+    width: 153px;
+    justify-content: center;
+    margin-top: 3rem;
+}
 
 
 /*============= MEDIA QUERIES =============*/
