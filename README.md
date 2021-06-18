@@ -5,4 +5,4 @@ In this project, you will implement 3 web pages with Bootstrap. You will use all
 You won’t have a lot of instruction, you are free to implement it the way that you want - the objective is simple: Have fully functional web pages that look the same as the designer file.
 
 Here the final result:
-![A figma mock up of a bootstrap website](https://github.com/tmcmac/holberton-smiling-school/blob/main/finalmockup.jpeg?raw=true)
+![A figma mock up of a bootstrap website](https://github.com/TMcMac/holberton-smiling-school/blob/master/finalmockup.jpeg?raw=true)
