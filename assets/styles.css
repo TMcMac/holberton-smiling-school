@@ -9,7 +9,7 @@
 /*** 1. GLOBAL ***/
 
 :root {
-    --color-dark: #000000;
+    --color-dark: #071629;
     --color-light: #FFFFFF;
     --color-accent: #C271FF;
     --font-family: "Source Sans Pro", "Spin-Cycle-OT", arial;
@@ -20,9 +20,18 @@ body {
     font-family: var(--font-family);
     overflow-x: hidden;
 }
-
+.white-text {
+    color: var(--color-light);
+}
+.dark-text {
+    color: var(--color-dark);
+}
+.less-dar-text {
+    color: var(--color-dark);
+    opacity: 50%;
+}
 .accent-text {
-    color: var(--color-accent)
+    color: var(--color-accent);
 }
 
 
@@ -106,29 +115,66 @@ header {
 
 /*** 2.  Main ***/
 
-div.carousel {
+    /** Carousels **/
+
+.quotecarousel {
     background-color: var(--color-accent);
     color: var(--color-light)!important;
 }
 
-.carousel-control-next-icon.light {
-	background-image: url(./images/arrow_white_right.png)!important;
+/* Still trying to get this right, defualts in for now */
+/* .carousel-control-next-icon-light {
+    background-image: url("images/arrow_white_right.png")!important;
 }
-.carousel-control-prev-icon.light {
-	background-image: url(./images/arrow_white_left.png)!important;
+.carousel-control-prev-icon-light {
+    background-image: url("images/arrow_white_left.png")!important;
 }
-.carousel-control-next-icon.dark {
-	background-image: url(./images/arrow_black_right.png)!important;
+.carousel-control-next-icon-dark {
+    background-image: url("images/arrow_black_right.png")!important;
 }
-.carousel-control-prev-icon.dark {
-	background-image: url(./images/arrow_black_left.png)!important;
-}
+.carousel-control-prev-icon-dark {
+    background-image: url("images/arrow_black_left.png")!important;
+} */
+
 .carousel-control-next, .carousel-control-prev {
 	opacity: 1 !important;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
-	height: 60px !important;
-	width: 30px !important;
+
+.tutorials-h1, .tutorials-p, .tutorials-arrow {
+    color:  var(--color-dark);
+}
+
+.tutorials-p {
+    font-size: 14px;
+}
+
+[class^="tutorial-bg-"] {
+    width: 100%;
+    height: 9.6rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+[class^="tutorial-"] img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.tutorial-bg-4 {
+    background-image: url(images/thumbnail_4.jpg);
+}
+
+.tutorial-bg-3 {
+    background-image: url(images/thumbnail_3.jpg);
+}
+
+.tutorial-bg-2 {
+    background-image: url(images/thumbnail_2.jpg);
+}
+
+.tutorial-bg-1 {
+    background-image: url(images/thumbnail_1.jpg);
 }
 
 
@@ -141,7 +187,7 @@ div.carousel {
     header {
         background-size: 1448.15px 1055px, cover;
     }
-    
+
     .banner {
         font-size: 6rem;
     }
@@ -157,35 +203,4 @@ div.carousel {
 .row, .container-fluid {
     margin-left: 0px !important;
     margin-right: 0px !important;
-  }
-  
-  /*-- Fixed Background Image --*/
-
-  .fixed-background {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    z-index: 1000!important;
-  }
-  .fixed-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -999 !important;
-  }
-  .fixed {
-    z-index: -999!important;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    will-change: transform;
   }
