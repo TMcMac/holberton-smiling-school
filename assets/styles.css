@@ -36,6 +36,9 @@ body {
 .bg-dark {
     background-color: var(--color-dark);
 }
+.bg-light {
+    background-color: var(--color-light);
+}
 
 /*** 2.  Header ***/
 header {
