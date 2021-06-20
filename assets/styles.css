@@ -39,16 +39,37 @@ body {
 .bg-light {
     background-color: var(--color-light);
 }
+.bg-accent {
+    background-color: var(--color-accent);
+}
 
 
 /*** 2.  Header ***/
-header {
+.homepage-hero {
     background-image: url("images/pic_1.jpg"), linear-gradient(to top, #071629 50%, transparent);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover, cover;
     color: white;
     margin-top: 0;
+}
+
+.pricing-hero {
+    background-image: url("images/pic_2.jpg"), linear-gradient(to top, #071629 50%, transparent);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    color: white;
+    margin-top: 0;
+}
+
+.courses-hero {
+    background-image: url("images/pic_3.jpg"), linear-gradient(to top, #071629 50%, transparent);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    color: white;
+    margin-top: 0;   
 }
 
     /** Nav Bar **/
@@ -117,6 +138,10 @@ header {
 }
 .profile > p {
     font-style: italic;
+}
+
+.holberton_school-icon-check {
+    color:greenyellow;
 }
 
 /*** 2.  Main ***/
@@ -190,6 +215,11 @@ header {
     width: 153px;
     justify-content: center;
     margin-top: 3rem;
+}
+
+    /** FAQ **/
+.faq {
+    color: var(--color-dark) !important;
 }
 
 /*** Footer ***/
