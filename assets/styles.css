@@ -40,6 +40,7 @@ body {
     background-color: var(--color-light);
 }
 
+
 /*** 2.  Header ***/
 header {
     background-image: url("images/pic_1.jpg"), linear-gradient(to top, #071629 50%, transparent);
@@ -189,6 +190,11 @@ header {
     width: 153px;
     justify-content: center;
     margin-top: 3rem;
+}
+
+/*** Footer ***/
+.social-media-icons {
+    font-size: 2rem;
 }
 
 
